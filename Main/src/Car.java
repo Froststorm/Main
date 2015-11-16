@@ -58,14 +58,14 @@ public class Car {
     }
 
     public  void  voice() {
-        System.out.println(" Beeep beeep ");
+        System.out.print(" Beeep beeep ");
     }
 
     public  void  carStarted() {
-        System.out.println(" Car started ");
+        System.out.println("Car started ");
     }
 
     public  void  carSoped() {
-        System.out.println(" Car stoped ");
+        System.out.println("Car stopped ");
     }
 }
