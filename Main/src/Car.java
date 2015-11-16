@@ -1,12 +1,20 @@
 
 public class Car {
     String colour;
-    String msunufacturer;
+    String manufacturer;
     int fuelConsumption;
-    int carWeignt;
-    int horesePowers;
+    int carWeight;
+    int horsePowers;
 
     public Car() {
+    }
+
+    public Car(String colour, String manufacturer, int fuelConsumption, int carWeight, int horsePowers) {
+        this.colour = colour;
+        this.manufacturer = manufacturer;
+        this.fuelConsumption = fuelConsumption;
+        this.carWeight = carWeight;
+        this.horsePowers = horsePowers;
     }
 
     public String getColour() {
@@ -17,12 +25,12 @@ public class Car {
         this.colour = colour;
     }
 
-    public String getMsunufacturer() {
-        return msunufacturer;
+    public String getManufacturer() {
+        return manufacturer;
     }
 
-    public void setMsunufacturer(String msunufacturer) {
-        this.msunufacturer = msunufacturer;
+    public void setManufacturer(String manufacturer) {
+        this.manufacturer = manufacturer;
     }
 
     public int getFuelConsumption() {
@@ -33,24 +41,26 @@ public class Car {
         this.fuelConsumption = fuelConsumption;
     }
 
-    public int getCarWeignt() {
-        return carWeignt;
+    public int getCarWeight() {
+        return carWeight;
     }
 
-    public void setCarWeignt(int carWeignt) {
-        this.carWeignt = carWeignt;
+    public void setCarWeight(int carWeight) {
+        this.carWeight = carWeight;
     }
 
-    public int getHoresePowers() {
-        return horesePowers;
+    public int getHorsePowers() {
+        return horsePowers;
     }
 
-    public void setHoresePowers(int horesePowers) {
-        this.horesePowers = horesePowers;
+    public void setHorsePowers(int horsePowers) {
+        this.horsePowers = horsePowers;
     }
+
     public  void  voice() {
         System.out.println(" Beeep beeep ");
     }
+
     public  void  carStarted() {
         System.out.println(" Car started ");
     }

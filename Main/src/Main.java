@@ -22,15 +22,10 @@ public class Main {
 //
 //        System.out.println(murzik.retCustomVoice(murzikCustomVoise));
 
-        Car ferrari = new Car();
-        ferrari.setCarWeignt(12345);
-        ferrari.setColour("Red");
-        ferrari.setFuelConsumption(5);
-        ferrari.setHoresePowers(700);
-        ferrari.setMsunufacturer("Ferrari");
-        System.out.println("CarWeight :" + ferrari.getCarWeignt() + " Car Colour " + ferrari.getColour()+
-        "Car fuel consuption " + ferrari.getFuelConsumption() + " Car horse powers " + ferrari.getHoresePowers());
-              ferrari.carStarted();
+        Car ferrari = new Car("Red","Ferrari",5,1300,500);
+        System.out.println("CarWeight :" + ferrari.getCarWeight() + " Car Colour " + ferrari.getColour()+
+        "Car fuel consumption " + ferrari.getFuelConsumption() + " Car horse powers " + ferrari.getHorsePowers());
+        ferrari.carStarted();
         ferrari.carSoped();
 
 
